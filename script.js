@@ -180,12 +180,10 @@ function totalCost(product) {
 
     // cartCost = localStorage.getItem('totalCost');
 
-    // console.log("AAA2 My cartCost is", cartCost);    
-    debugger
+    // console.log("AAA2 My cartCost is", cartCost);
     let cartItems = JSON.parse(localStorage.getItem("productsInCart"))
     let temp = 0;
     Object.values(cartItems).map(item => {
-        debugger
         temp += Number((item.inCart * item.price))
     })
     localStorage.setItem('totalCost', temp);
