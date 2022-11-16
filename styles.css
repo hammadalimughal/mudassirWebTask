@@ -1,0 +1,148 @@
+body {
+  background-color: goldenrod;
+}
+
+.Webpage {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.navbar-brand {
+  color: goldenrod;
+}
+.nav-item {
+  color: goldenrod;
+}
+
+.card {
+  text-align: center;
+  margin: 10px;
+  border-radius: 50px;
+  display: flex;
+}
+
+h1 {
+  color: blue;
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50px;
+}
+
+.card-link {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#number {
+  margin-top: 20px;
+  width: 80px;
+}
+
+.Cart-Container {
+  width: 70%;
+  height: 85%;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0px 25px 40px #1687d933;
+}
+
+.closeIcon {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+.rightArrow {
+  width: 20px;
+  height: 20px;
+  margin-left: 20px;
+}
+
+.leftArrow {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
+}
+
+#nav-footer {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+li {
+  padding: 5px;
+}
+
+#copyright {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 10px;
+}
+footer {
+  background-color: black;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    background-color: goldenrod;
+  }
+
+  .Webpage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .navbar-brand {
+    color: goldenrod;
+  }
+  .nav-item {
+    color: goldenrod;
+  }
+
+  .card {
+    text-align: center;
+    margin: 10px;
+    border-radius: 50px;
+    display: flex;
+  }
+
+  h1 {
+    color: blue;
+  }
+
+  img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50px;
+  }
+
+  .card-link {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+
+  #number {
+    margin-top: 20px;
+    width: 80px;
+  }
+
+  .Cart-Container {
+    width: 70%;
+    height: 85%;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0px 25px 40px #1687d933;
+  }
+  #checkout {
+    border-radius: 10px;
+    display: flex;
+  }
+}

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="./shoppingcart.css" />
+  </head>
+  <body>
+    <header class="main-header">
+      <nav>
+        <ul>
+          <li><a href="index.html">HOME</a></li>
+          <li><a href="receipt.html">RECEIPT</a></li>
+        </ul>
+      </nav>
+    </header>
+    <h1>Shopping Cart</h1>
+    <section>
+      <div class="cart-items">
+        <div class="cart-row">
+          <div class="cart-item cart-column">
+            <span class="cart-item-title">Bread</span>
+          </div>
+          <span class="cart-price cart-column">$1.99</span>
+          <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" />
+          </div>
+        </div>
+      </div>
+      <div class="cart-items">
+        <div class="cart-row">
+          <div class="cart-item cart-column">
+            <span class="cart-item-title">Dog Food</span>
+          </div>
+          <span class="cart-price cart-column">$45.00</span>
+          <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" />
+          </div>
+        </div>
+      </div>
+      <div class="cart-items">
+        <div class="cart-row">
+          <div class="cart-item cart-column">
+            <span class="cart-item-title">Ground Pork</span>
+          </div>
+          <span class="cart-price cart-column">$14.99</span>
+          <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" />
+          </div>
+        </div>
+      </div>
+      <div class="cart-items">
+        <div class="cart-row">
+          <div class="cart-item cart-column">
+            <span class="cart-item-title">Milk</span>
+          </div>
+          <span class="cart-price cart-column">$2.99</span>
+          <div class="cart-quantity cart-column">
+            <input class="cart-quantity-input" type="number" />
+          </div>
+        </div>
+      </div>
+      <div class="cart-total">
+        <strong class="cart-total-title">Total</strong>
+        <span class="cart-total-price">$9.99</span>
+      </div>
+
+      <button id="buy" type="button">Purchase</button>
+      <div>
+        <button id="cash" class="hide">Cash</button>
+        <button id="credit" class="hide">Credit</button>
+      </div>
+
+      <div id="result"></div>
+    </section>
+    <section class="payment-form-container">
+      <form>
+        <div id="cashForm" class="form-check">
+          <label class="form-check-label" for="flexCheckDefault">Cash</label>
+          <input class="form-check-input" />
+
+          <div>
+            <label for="one">Amount Tendered</label>
+            <input type="number" />
+          </div>
+        </div>
+        <div id="creditForm" class="form-check">
+          <label class="form-check-label" for="flexCheckChecked">Credit</label>
+          <input class="form-check-input" />
+
+          <div>
+            <label for="one">Credit Card Number</label>
+            <input type="number" maxlength="16" minlength="16" />
+            <label for="one">Expiration Date</label>
+            <input
+              type="month"
+              id="expiration-date"
+              name="expiration-date"
+              min="2022-11"
+              value="2022-12"
+            />
+            <label for="one">CVV</label>
+            <input type="number" minlength="3" maxlength="3" />
+            <input type="submit" value="Submit" />
+          </div>
+        </div>
+      </form>
+    </section>
+  </body>
+  <script src="./shoppingcart.js"></script>
+</html>
